@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schneverdingen Tiny Home - Airbnb</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar (Same as other pages) -->
+    <nav class="fixed top-0 left-0 right-0 bg-white border-b z-50">
+        <div class="max-w-[2520px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="/" class="text-[#FF385C] text-2xl font-bold">
+                        <i class="fab fa-airbnb"></i>
+                        <span class="ml-2">airbnb</span>
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex items-center justify-center flex-1 max-w-2xl mx-4">
+                    <div class="flex items-center w-full rounded-full border shadow-sm hover:shadow-md transition cursor-pointer p-2">
+                        <div class="px-4 border-r">Anywhere</div>
+                        <div class="px-4 border-r">Any week</div>
+                        <div class="px-4">Add guests</div>
+                        <div class="bg-[#FF385C] p-2 rounded-full text-white">
+                            <i class="fas fa-search text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Menu -->
+                <div class="flex items-center">
+                    <div class="hidden sm:flex items-center mr-4">
+                        <a href="#" class="hover:bg-gray-100 px-4 py-2 rounded-full text-sm font-medium">
+                            Airbnb your home
+                        </a>
+                        <button class="hover:bg-gray-100 p-2 rounded-full">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center border rounded-full p-2 hover:shadow-md transition">
+                        <button class="p-1">
+                            <i class="fas fa-bars mr-2"></i>
+                        </button>
+                        <button class="bg-gray-500 text-white rounded-full p-1">
+                            <i class="fas fa-user"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-[2520px] mx-auto px-4 sm:px-6 lg:px-8 pt-24">
+        <!-- Property Title -->
+        <div class="mb-6">
+            <h1 class="text-3xl font-semibold">Cozy Tiny Home in Schneverdingen</h1>
+            <div class="flex items-center justify-between mt-2">
+                <div class="flex items-center space-x-4">
+                    <span class="flex items-center">
+                        <i class="fas fa-star text-sm"></i>
+                        <span class="ml-1">4.96</span>
+                    </span>
+                    <span>·</span>
+                    <span class="underline">124 reviews</span>
+                    <span>·</span>
+                    <span class="underline">Schneverdingen, Germany</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="flex items-center hover:underline">
+                        <i class="fas fa-share mr-2"></i>
+                        Share
+                    </button>
+                    <button class="flex items-center hover:underline">
+                        <i class="far fa-heart mr-2"></i>
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="grid grid-cols-4 gap-2 rounded-xl overflow-hidden">
+            <div class="col-span-2 row-span-2">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1186040802323982212/original/586687f2-f6a5-431d-9801-ceececcc5e2c.jpeg" 
+                     alt="Main property image"
+                     class="w-full h-full object-cover"/>
+            </div>
+            <div>
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1186040802323982212/original/586687f2-f6a5-431d-9801-ceececcc5e2c.jpeg" 
+                     alt="Property image"
+                     class="w-full h-full object-cover"/>
+            </div>
+            <div>
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1186040802323982212/original/586687f2-f6a5-431d-9801-ceececcc5e2c.jpeg" 
+                     alt="Property image"
+                     class="w-full h-full object-cover"/>
+            </div>
+            <div>
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1186040802323982212/original/586687f2-f6a5-431d-9801-ceececcc5e2c.jpeg" 
+                     alt="Property image"
+                     class="w-full h-full object-cover"/>
+            </div>
+            <div>
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1186040802323982212/original/586687f2-f6a5-431d-9801-ceececcc5e2c.jpeg" 
+                     alt="Property image"
+                     class="w-full h-full object-cover"/>
+            </div>
+        </div>
+
+        <!-- Property Details -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-8">
+            <!-- Left Column - Property Info -->
+            <div class="md:col-span-2">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h2 class="text-2xl font-semibold">Entire tiny home hosted by John</h2>
+                        <div class="mt-2 text-gray-600">
+                            <span>2 guests</span> · 
+                            <span>1 bedroom</span> · 
+                            <span>1 bed</span> · 
+                            <span>1 bath</span>
+                        </div>
+                    </div>
+                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                        <img src="https://a0.muscache.com/im/pictures/user/User-96624994/original/a6c5736c-0261-4679-9990-0dc965c4b4d1.jpeg" 
+                             alt="Host"
+                             class="w-full h-full object-cover"/>
+                    </div>
+                </div>
+
+                <hr class="my-8"/>
+
+                <!-- Features -->
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-medal text-2xl text-gray-600 mt-1"></i>
+                        <div class="ml-4">
+                            <h3 class="font-semibold">John is a Superhost</h3>
+                            <p class="text-gray-600">Superhosts are experienced, highly rated hosts.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-location-dot text-2xl text-gray-600 mt-1"></i>
+                        <div class="ml-4">
+                            <h3 class="font-semibold">Great location</h3>
+                            <p class="text-gray-600">95% of recent guests gave the location a 5-star rating.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-key text-2xl text-gray-600 mt-1"></i>
+                        <div class="ml-4">
+                            <h3 class="font-semibold">Great check-in experience</h3>
+                            <p class="text-gray-600">100% of recent guests gave the check-in process a 5-star rating.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-8"/>
+
+                <!-- Description -->
+                <div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Experience the charm of tiny living in our cozy home nestled in the heart of Schneverdingen. 
+                        This beautifully designed space offers all the comforts of home in an efficient, 
+                        eco-friendly package. Perfect for solo travelers or couples looking for a unique getaway.
+                    </p>
+                    <button class="mt-4 font-semibold underline">Show more</button>
+                </div>
+
+                <hr class="my-8"/>
+
+                <!-- Amenities -->
+                <div>
+                    <h2 class="text-2xl font-semibold mb-6">What this place offers</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-wifi text-lg text-gray-600"></i>
+                            <span class="ml-4">Wifi</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-tv text-lg text-gray-600"></i>
+                            <span class="ml-4">TV</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-kitchen-set text-lg text-gray-600"></i>
+                            <span class="ml-4">Kitchen</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-car text-lg text-gray-600"></i>
+                            <span class="ml-4">Free parking</span>
+                        </div>
+                    </div>
+                    <button class="mt-6 border border-gray-900 rounded-lg px-6 py-3 hover:bg-gray-100 transition">
+                        Show all amenities
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column - Booking Widget -->
+            <div class="md:col-span-1">
+                <div class="sticky top-28 border rounded-xl p-6 shadow-lg">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-2xl font-semibold">€135</span>
+                            <span class="text-gray-600">night</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-sm"></i>
+                            <span class="ml-1">4.96</span>
+                            <span class="mx-1">·</span>
+                            <span class="underline">124 reviews</span>
+                        </div>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <div class="mt-4">
+                        <div class="border rounded-t-lg">
+                            <div class="grid grid-cols-2">
+                                <div class="p-3 border-r border-b">
+                                    <div class="text-xs font-semibold">CHECK-IN</div>
+                                    <div>Add date</div>
+                                </div>
+                                <div class="p-3 border-b">
+                                    <div class="text-xs font-semibold">CHECKOUT</div>
+                                    <div>Add date</div>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <div class="text-xs font-semibold">GUESTS</div>
+                                <div>1 guest</div>
+                            </div>
+                        </div>
+
+                        <button class="w-full bg-[#FF385C] text-white py-3 rounded-lg mt-4 hover:bg-[#E31C5F] transition">
+                            Reserve
+                        </button>
+
+                        <p class="text-center text-gray-600 mt-4">You won't be charged yet</p>
+
+                        <!-- Price Breakdown -->
+                        <div class="mt-4 space-y-4">
+                            <div class="flex justify-between">
+                                <span class="underline">€135 x 5 nights</span>
+                                <span>€675</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="underline">Cleaning fee</span>
+                                <span>€50</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="underline">Service fee</span>
+                                <span>€102</span>
+                            </div>
+                            <div class="pt-4 border-t flex justify-between font-semibold">
+                                <span>Total before taxes</span>
+                                <span>€827</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="mt-12">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-star text-lg"></i>
+                <span class="text-2xl font-semibold ml-2">4.96 · 124 reviews</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Review 1 -->
+                <div>
+                    <div class="flex items-center">
+                        <img src="https://a0.muscache.com/im/pictures/user/User-96624994/original/a6c5736c-0261-4679-9990-0dc965c4b4d1.jpeg" 
+                             alt="Reviewer"
+                             class="w-12 h-12 rounded-full"/>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Sarah</h4>
+                            <p class="text-gray-600">March 2024</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        Amazing tiny home experience! The space was perfectly designed and had everything we needed.
+                        The location was peaceful and the host was very responsive.
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div>
+                    <div class="flex items-center">
+                        <img src="https://a0.muscache.com/im/pictures/user/User-96624994/original/a6c5736c-0261-4679-9990-0dc965c4b4d1.jpeg" 
+                             alt="Reviewer"
+                             class="w-12 h-12 rounded-full"/>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Michael</h4>
+                            <p class="text-gray-600">February 2024</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        Cozy and comfortable stay. The tiny home was spotless and had great amenities.
+                        Would definitely recommend for a unique experience!
+                    </p>
+                </div>
+            </div>
+
+            <button class="mt-8 border border-gray-900 rounded-lg px-6 py-3 hover:bg-gray-100 transition">
+                Show all reviews
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer (Same as other pages) -->
+    <footer class="bg-gray-100 mt-16 py-8">
+        <div class="max-w-[2520px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h5 class="font-bold mb-4">Support</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:underline">Help Center</a></li>
+                        <li><a href="#" class="hover:underline">AirCover</a></li>
+                        <li><a href="#" class="hover:underline">Safety information</a></li>
+                        <li><a href="#" class="hover:underline">Supporting people with disabilities</a></li>
+                        <li><a href="#" class="hover:underline">Cancellation options</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Community</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:underline">Airbnb.org: disaster relief housing</a></li>
+                        <li><a href="#" class="hover:underline">Combating discrimination</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Hosting</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:underline">Airbnb your home</a></li>
+                        <li><a href="#" class="hover:underline">AirCover for Hosts</a></li>
+                        <li><a href="#" class="hover:underline">Hosting resources</a></li>
+                        <li><a href="#" class="hover:underline">Community forum</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Airbnb</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:underline">Newsroom</a></li>
+                        <li><a href="#" class="hover:underline">New features</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm">
+                    © 2024 Airbnb, Inc. · Privacy · Terms · Sitemap
+                </div>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <button class="flex items-center hover:underline">
+                        <i class="fas fa-globe mr-2"></i>
+                        English (US)
+                    </button>
+                    <button class="hover:underline">
+                        $ USD
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
